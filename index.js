@@ -274,7 +274,7 @@ const API_KEY=""
   try {
     const response = await axios.post(apiUrl, body, {
       headers: {
-        Authorization: `Bearer ${API_KEY}`,
+        // Authorization: `Bearer ${API_KEY}`,
         'Content-Type': 'application/json',
       },
     });
