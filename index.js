@@ -270,11 +270,11 @@ const openAIAPI = async (promptValue) => {
     n: 1,
     stop: null,
   };
-
+const API_KEY=""
   try {
     const response = await axios.post(apiUrl, body, {
       headers: {
-        Authorization: `Bearer sk-NyT09YbWmBDOBMSnJQ2HeSiGTbPUxU5NIDDnwpfUdeT3BlbkFJFNtpUJ8FeTqMgDqmloZcQ6S72F0Sm7RlPUlA6HHoMA`,
+        Authorization: `Bearer ${API_KEY}`,
         'Content-Type': 'application/json',
       },
     });
